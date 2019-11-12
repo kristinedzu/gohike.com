@@ -1,0 +1,778 @@
+*,
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.nav_link {
+    display: block;
+    color: #000000;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-family: meno-text, serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    background-color: #263522;
+    text-align: left;
+    padding: 13px;
+    border-left: 1.5px solid white;
+    list-style: none;
+    z-index: 4;
+}
+
+.navigation_container {
+    background-color: #263522;
+    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    height: 53px;
+}
+
+.menu {
+    list-style: none;
+    overflow: hidden;
+    background-color: #ffffff;
+    margin-top: 3px;
+    margin-bottom: 2px;
+}
+
+.menu_item {
+    font-size: 12px;
+    padding: 5px 5px 5px 20px;
+    z-index: 4;
+}
+
+
+.logo_image {
+    width: 150px;
+    max-height: 107.14px;
+    padding: 0;
+    z-index: 1;
+}
+
+.main_content {
+    padding: 13px 13px 0 13px;
+    margin-top: 90px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.main_elvis_photo {
+    max-width: 100%;
+    margin-top: 40px;
+    display: block;
+}
+
+@media only screen and (min-width: 1037px) {
+    .main_elvis_photo {
+        display: none;
+    }
+}
+
+.main_elvis_compressed {
+    display: none;
+}
+
+@media only screen and (min-width: 1037px) {
+    .main_elvis_compressed {
+        display: block;
+        max-width: 500px;
+        margin-top: 40px;
+    }
+}
+
+.main_crimea_photo {
+    max-width: 100%;
+    padding-top: 15px;
+}
+
+.crimea_web {
+    display: none;
+}
+
+@media only screen and (min-width: 1037px) {
+    .main_crimea_photo {
+        display: none;
+    }
+    
+    .main_elvis_photo {
+        max-width: 500px;
+    }
+    
+    .crimea_web {
+        display: block;
+        max-width: 500px;
+        padding-top: 40px;
+    }
+    
+}
+
+
+.photo_description {
+
+    text-align: center;
+    font-size: 11px;
+    color: #474747;
+    font-style: italic
+}
+
+h1 {
+    font-family: farmhand-sans, sans;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    text-decoration: underline;
+    text-align: center;
+    margin-top: 15px;
+    color: #474747;
+}
+
+
+.search_hike {
+    background-color: #69A1B6;
+    padding: 20px;
+    font-family: meno-text, serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: white;
+    border: 1px solid #474747;
+    border-radius: 10px;
+    margin: 45px auto 45px auto;
+    text-decoration: none;
+    text-align: center;
+    max-width: 330px;
+    
+}
+
+.search_link {
+    text-decoration: none;
+    color: white;
+}
+
+.search_hike_web {
+    display: none;
+}
+
+.web_search_hike {
+    display: block;
+}
+
+@media only screen and (min-width: 1037px) {
+    .web_search_hike {display: none;}
+    .search_hike_web {
+        display: block;
+        margin-bottom: 180px;
+        margin-top: 100px;
+    }
+    
+    
+    .index_main {
+        padding: 0 15%;
+    }
+}
+
+.form_container {
+    position: absolute;
+    right: 0;
+    margin-top: -32px;
+    margin-right: 13px;
+    padding: 4px;
+    width: 220px;
+    background-color: #69A1B6;
+    border-radius: 7px;
+    border: 0.4px solid #474747;
+}
+
+.input_searchfield {
+    border-radius: 7px;
+    padding: 9px;
+    width: 180px;
+    border: 0.4px solid #474747;
+}
+
+.search_button {
+    font-size: 25px;
+    background-color: #69A1B6;
+    position: absolute;
+    padding: 0 0 0 4px;
+
+}
+
+.footer_section {
+    height: 53.56px;
+    background-color: #263522;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_text {
+    color: white;
+    font-family: meno-text, serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.main_footer {
+    margin-top: 50px;
+}
+
+.fa_icon {
+    color: #3D5A98;
+    padding: 0 6px;
+}
+
+.in_icon {
+    color: #CF3766;
+}
+
+/* here starts article styling */
+
+.article_header {
+    text-decoration: none;
+    margin-top: 130px;
+    text-align: left;
+    padding-left: 15px;
+}
+
+.author {
+    text-align: left;
+    padding-left: 15px;
+}
+
+.description_text {
+    font-family: 'PT Sans Narrow', sans-serif;
+    padding: 15px;
+    line-height: 25px;
+    font-size: 16px;
+    color: #474747;
+}
+
+.palmsprings_photo {
+    max-width: 100%;
+    padding: 0 15px;
+    display: block;
+}
+@media only screen and (min-width: 1037px) {
+    .palmsprings_photo {
+        display: none;
+    }
+}
+
+.palmsprings_compressed {
+    display: none;
+}
+
+@media only screen and (min-width: 1037px) {
+    .palmsprings_compressed {
+        display: block;
+        max-width: 100%;
+        padding: 0 15px;
+    }
+}
+
+
+.article_text {
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 16px;
+    padding: 15px;
+    color: #474747;
+}
+
+.article_h2 {
+    font-family: pt-sans-narrow, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #474747;
+    font-size: 18px;
+    padding: 15px 0 0 15px;
+}
+
+.gui_beach {
+    max-width: 100%;
+    padding: 0 5px 0 15px;
+    display: block;
+}
+
+@media only screen and (min-width: 1037px) {
+    .gui_beach {
+        display: none;
+    }
+}
+
+.gui_compressed {
+    display: none;
+}
+
+@media only screen and (min-width: 1037px) {
+    .gui_compressed {
+        display: block;
+        max-width: 100%;
+        padding: 0 5px 0 15px;
+    }
+}
+
+.aipetri_photo {
+    max-width: 100%;
+    padding: 0 15px 0 5px;
+    display: block;
+}
+
+@media only screen and (min-width: 1037px) {
+    .aipetri_photo {
+display: none;
+    }
+}
+
+.aipetri_compressed {
+    display: none;
+}
+
+@media only screen and (min-width: 1037px) {
+    .aipetri_compressed {
+        display: block;
+        max-width: 100%;
+        padding: 0 15px 0 5px;
+    }
+}
+
+
+.article_div {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+@media only screen and (min-width: 1037px) {
+    .gui_beach {
+        width: 600px;
+    }
+
+    .aipetri_photo {
+        width: 600px;
+    }
+
+    .article_div {
+        display: flex;
+        justify-content: space-around;
+    }
+
+}
+
+
+.bryce_photo {
+    max-width: 100%;
+    padding: 15px 15px 0 15px;
+    display: block;
+}
+
+@media only screen and (min-width: 1037px) {
+    .bryce_photo {
+        display: none;
+    }
+}
+
+.bryce_compressed {
+    display: none;
+}
+
+@media only screen and (min-width: 1037px) {
+    .bryce_compressed {
+        display: block;
+        max-width: 100%;
+        padding: 15px 15px 0 15px;
+    }
+}
+
+.bryce_web {
+    padding: 15px 0;
+}
+
+@media only screen and (min-width: 1037px) {
+.bryce_article {
+    display: flex;
+    justify-content: space-between;
+    }
+    
+    .bryce_horse_text {
+        padding-top: 50px;
+    }
+}
+
+.horseshoe_photo {
+    max-width: 100%;
+    padding: 15px 15px 0 15px;
+    display: block;
+}
+
+@media only screen and (min-width: 1037px) {
+    .horseshoe_photo {
+        display: none;
+    }
+}
+
+.horseshoe_compressed {
+    display: none;
+}
+
+@media only screen and (min-width: 1037px) {
+    .horseshoe_compressed {
+        display: block;
+        max-width: 100%;
+    padding: 15px 15px 0 15px;
+    }
+}
+
+.grand_canyon {
+    max-width: 100%;
+    padding: 15px 15px 0 15px;
+    display: block;
+}
+
+@media only screen and (min-width: 1037px) {
+    .grand_canyon {
+        display: none;
+    }
+}
+
+.grand_compressed {
+    display: none;
+}
+
+@media only screen and (min-width: 1037px) {
+    .grand_compressed {
+        display: block;
+        max-width: 100%;
+        padding: 15px 15px 0 15px;
+    }
+}
+
+
+.last_article {
+    margin-bottom: 45px;
+}
+
+@media only screen and (min-width: 1037px) {
+.main_article {
+padding: 0 20%;
+    }
+}
+
+.search_body {
+    background-image: url('../photos/compressjpeg/ElvisHoneymoon2-min.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    min-height: 750px;
+}
+
+.search_country {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 150px;
+}
+
+.search_container {
+    width: 300px;
+    padding: 5px;
+    background-color: #69A1B6;
+    border-radius: 7px;
+    border: 1px solid #474747;
+}
+
+.trail_searchfield {
+    border-radius: 7px;
+    padding: 18px;
+    width: 288px;
+    border: 0.4px solid #474747;
+}
+
+.search_trail {
+    width: 300px;
+    border: 5px solid white;
+    margin-top: 15px;
+}
+
+.china_map {
+    max-width: 93%;
+    border: 1px solid #C4C3C3;
+    margin: 35px 13px 0;
+}
+
+.china_map_content {
+    margin-top: 90px;
+}
+
+.sort_by {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+
+    background-color: #69A1B6;
+}
+
+.sortby_content {
+    padding: 15px;
+}
+
+.sortby_text {
+    color: white;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 16px;
+}
+
+.sort_components {
+    color: white;
+}
+
+
+.submit {
+  color: #474747;
+    font-family: meno-text, serif;
+    font-style: normal;
+    font-weight: 400;
+    background-color: white;
+    padding: 5px 10px;
+    border: 0.5px solid #474747;
+    border-radius: 7px;
+    text-decoration: none;
+}
+
+@media only screen and (min-width: 1037px) {
+    .china_map {
+        max-width: 900px;
+    }
+    
+    .china_map_content {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start
+    }
+    
+    .sort_by {
+        margin-top: 35px;
+        flex-direction: column;
+    }
+   
+    
+    .form_container {
+        top: 89px;
+    }
+    
+}
+
+.beijing_photo {
+    max-width: 100%;
+    margin-bottom: -5px;
+}
+
+@media only screen and (min-width: 1037px) {
+    .beijing_photo {
+        display: none;
+    }
+    
+    .china_footer {
+        margin-top: 107px;
+    }
+    
+    .china_trail_footer {
+        margin-top:  48px;
+    }
+}
+
+.great_photo {
+    max-width: 100%;
+    padding: 20px 13px 0;
+    display: block;
+}
+
+@media only screen and (min-width: 1037px) {
+    .great_photo {
+        display: none;
+    }
+}
+
+.great_compressed {
+    display: none;
+}
+
+@media only screen and (min-width: 1037px) {
+    .great_compressed {
+        display: block;
+        max-width: 100%;
+        padding: 20px 13px 0;
+    }
+}
+
+@media only screen and (min-width: 1037px) {
+    .great_web {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        
+    }
+    .great_photo {
+        max-width: 100%;
+    }
+    
+}
+
+
+.great_description {
+    margin-left: 40px;
+}
+
+.p1 {
+    display: inline-block;
+    font-family: pt-sans-narrow, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.star {
+    color: orange;
+}
+
+.p2 {
+    font-family: meno-text, serif;
+    font-style: normal;
+    font-weight: 400;
+    color: #474747;
+}
+
+.rating {
+    margin-top: 45px;
+    display: flex;
+    justify-content: center;
+}
+
+.input_name {
+    margin-top: 10px;
+    padding: 5px;
+    width: 200px;
+    border: 5px solid #69A1B6;
+    border-radius: 7px;
+}
+
+.input_comment {
+    margin-top: 10px;
+    padding: 5px 5px 100px;
+    width: 200px;
+    border: 5px solid #69A1B6;
+    border-radius: 7px;
+}
+
+.comment {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.comment_form {
+    padding: 5px;
+    width: 150px;
+    margin-top: 10px;
+    border: 1px solid 
+}
+
+
+.book_here {
+    position: absolute;
+    position: fixed;
+    right: -9px;
+    padding: 16px;
+    background-color: #69A1B6;
+    border: 0.5 solid #474747;
+    border-radius: 10px;
+    font-family: meno-text, serif;
+    font-style: normal;
+    font-weight: 400;
+    color: black;
+    opacity: 0.8;
+}
+
+p4 {
+    font-family: meno-text, serif;
+    font-style: normal;
+    font-weight: 400;
+    color: black;
+    text-decoration: underline;
+}
+
+.buyhere_link {
+    color: black;
+}
+
+.buy_link:hover {
+    opacity: 0.7;
+}
+.trail_link {
+    color: #474747;
+}
+
+.trail_link:hover {
+    opacity: 0.7;
+}
+
+.trail-link {
+    margin-top: 25px;
+}
+
+@media only screen and (min-width: 1037px) {
+    .trail_link {
+        display: none;
+    }
+}
+
+.trail_name {
+    display: none;
+}
+
+@media only screen and (min-width: 1037px) {
+    .trail_name {
+        display: block;
+        background-color: white;
+    }
+    
+    .trail_web {
+        color: #474747;
+        font-size: 32px;
+    }
+    
+    .trail_web:hover {
+        opacity: 0.7;
+    }
+    
+    .trail-link {
+        margin-top: 35px;
+    }
+}
+
+@media only screen and (min-width: 1037px) {
+    
+
+.background_button {
+    margin-bottom: 625px;
+}
+}
+    
